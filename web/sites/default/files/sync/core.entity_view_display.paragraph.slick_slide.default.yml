@@ -1,0 +1,61 @@
+uuid: 5c7e3378-d722-4480-b67f-38484c01a9d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.slick_slide.field_cta
+    - field.field.paragraph.slick_slide.field_description
+    - field.field.paragraph.slick_slide.field_image
+    - field.field.paragraph.slick_slide.field_title
+    - paragraphs.paragraphs_type.slick_slide
+  module:
+    - element_class_formatter
+    - text
+id: paragraph.slick_slide.default
+targetEntityType: paragraph
+bundle: slick_slide
+mode: default
+content:
+  field_cta:
+    type: link_class
+    label: hidden
+    settings:
+      class: 'btn custom-btn'
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_title:
+    type: wrapper_class
+    label: hidden
+    settings:
+      class: slick-title
+      tag: h1
+      link: false
+      link_class: ''
+      summary: false
+      trim: 200
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

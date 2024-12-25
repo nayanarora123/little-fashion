@@ -1,0 +1,25 @@
+uuid: 4ef93c9d-8028-4b69-9d34-a3266c3c6cb1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.webform_with_information.field_webform
+    - paragraphs.paragraphs_type.webform_with_information
+id: paragraph.webform_with_information.default
+targetEntityType: paragraph
+bundle: webform_with_information
+mode: default
+content:
+  field_webform:
+    type: entity_reference_autocomplete
+    weight: 0
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

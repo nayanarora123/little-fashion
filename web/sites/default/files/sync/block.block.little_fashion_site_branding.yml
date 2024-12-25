@@ -1,0 +1,25 @@
+uuid: 439e722b-4f37-4997-9ac1-e1e3460b5cab
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - little_fashion
+_core:
+  default_config_hash: n_nlgjggHVfQt2H__zvLOKB2YtjPDbQ5tHijF9LE1aM
+id: little_fashion_site_branding
+theme: little_fashion
+region: header
+weight: -3
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

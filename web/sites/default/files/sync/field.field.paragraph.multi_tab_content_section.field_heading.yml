@@ -1,0 +1,24 @@
+uuid: 4f3d649f-1909-4d92-b9c2-d68d436a1e54
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_heading
+    - filter.format.basic_html
+    - paragraphs.paragraphs_type.multi_tab_content_section
+  module:
+    - text
+id: paragraph.multi_tab_content_section.field_heading
+field_name: field_heading
+entity_type: paragraph
+bundle: multi_tab_content_section
+label: 'Formatted Heading'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text

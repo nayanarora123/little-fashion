@@ -1,0 +1,22 @@
+uuid: 9a7dfde3-8cff-4825-89c5-75ba5a75149f
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - little_fashion
+_core:
+  default_config_hash: BZ5tpW7H8X4PVGRm3MImTIHd2tN0eF7zOtp4SpRYUA0
+id: little_fashion_messages
+theme: little_fashion
+region: highlighted
+weight: -2
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,21 @@
+uuid: 83f9a67a-f4ab-46e6-aaa9-7e708fe2c578
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_active_tab
+    - paragraphs.paragraphs_type.tab_item
+id: paragraph.tab_item.field_active_tab
+field_name: field_active_tab
+entity_type: paragraph
+bundle: tab_item
+label: 'Active tab'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

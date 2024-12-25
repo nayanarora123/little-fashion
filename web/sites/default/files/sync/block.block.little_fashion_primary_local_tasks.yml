@@ -1,0 +1,22 @@
+uuid: fe7fca80-f60b-47d8-8c61-595cc6615bef
+langcode: en
+status: true
+dependencies:
+  theme:
+    - little_fashion
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: little_fashion_primary_local_tasks
+theme: little_fashion
+region: highlighted
+weight: -1
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

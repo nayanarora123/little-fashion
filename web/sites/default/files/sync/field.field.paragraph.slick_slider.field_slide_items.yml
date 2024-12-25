@@ -1,0 +1,34 @@
+uuid: 5c78c805-84d6-4a11-a628-24bcf0b49a13
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_slide_items
+    - paragraphs.paragraphs_type.slick_slide
+    - paragraphs.paragraphs_type.slick_slider
+  module:
+    - entity_reference_revisions
+id: paragraph.slick_slider.field_slide_items
+field_name: field_slide_items
+entity_type: paragraph
+bundle: slick_slider
+label: 'Slider items'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      slick_slide: slick_slide
+    negate: 0
+    target_bundles_drag_drop:
+      slick_slide:
+        weight: 3
+        enabled: true
+      slick_slider:
+        weight: 4
+        enabled: false
+field_type: entity_reference_revisions

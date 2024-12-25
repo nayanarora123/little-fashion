@@ -1,0 +1,24 @@
+uuid: 351dfb83-5cea-4400-9bd0-f5c9268c6b08
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_heading
+    - filter.format.basic_html
+    - paragraphs.paragraphs_type.image_with_description
+  module:
+    - text
+id: paragraph.image_with_description.field_heading
+field_name: field_heading
+entity_type: paragraph
+bundle: image_with_description
+label: 'Formatted Heading'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text

@@ -1,0 +1,58 @@
+uuid: 936ea89b-12b5-425a-bf40-418de2e5238a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.tab_item.field_active_tab
+    - field.field.paragraph.tab_item.field_description
+    - field.field.paragraph.tab_item.field_tab_media
+    - field.field.paragraph.tab_item.field_title
+    - paragraphs.paragraphs_type.tab_item
+  module:
+    - element_class_formatter
+    - text
+id: paragraph.tab_item.default
+targetEntityType: paragraph
+bundle: tab_item
+mode: default
+content:
+  field_active_tab:
+    type: boolean
+    label: hidden
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_tab_media:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_title:
+    type: wrapper_class
+    label: hidden
+    settings:
+      class: slick-title
+      tag: h1
+      link: false
+      link_class: ''
+      summary: false
+      trim: 200
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

@@ -1,0 +1,57 @@
+uuid: 0e561da9-8265-4875-abfa-65c685e346d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paragraph_components
+    - node.type.page
+    - paragraphs.paragraphs_type.hero_banner
+    - paragraphs.paragraphs_type.image_with_description
+    - paragraphs.paragraphs_type.multi_tab_content_section
+    - paragraphs.paragraphs_type.slick_slider
+    - paragraphs.paragraphs_type.webform_with_information
+  module:
+    - entity_reference_revisions
+id: node.page.field_paragraph_components
+field_name: field_paragraph_components
+entity_type: node
+bundle: page
+label: 'Paragraph components'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      slick_slider: slick_slider
+      multi_tab_content_section: multi_tab_content_section
+      hero_banner: hero_banner
+      image_with_description: image_with_description
+      webform_with_information: webform_with_information
+    negate: 0
+    target_bundles_drag_drop:
+      hero_banner:
+        weight: 7
+        enabled: true
+      image_with_description:
+        weight: 7
+        enabled: true
+      multi_tab_content_section:
+        weight: 5
+        enabled: true
+      slick_slide:
+        weight: 3
+        enabled: false
+      slick_slider:
+        weight: 4
+        enabled: true
+      tab_item:
+        weight: 6
+        enabled: false
+      webform_with_information:
+        weight: 11
+        enabled: true
+field_type: entity_reference_revisions

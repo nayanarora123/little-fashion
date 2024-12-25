@@ -1,0 +1,26 @@
+uuid: 88ea0d14-efa4-416e-9360-f0fa69e9308e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_description
+    - filter.format.basic_html
+    - filter.format.full_html
+    - paragraphs.paragraphs_type.slick_slide
+  module:
+    - text
+id: paragraph.slick_slide.field_description
+field_name: field_description
+entity_type: paragraph
+bundle: slick_slide
+label: Description
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+    - full_html
+field_type: text_long

@@ -1,0 +1,26 @@
+uuid: 093802b9-2672-4916-aa2d-a93e6cbd3188
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_heading
+    - filter.format.basic_html
+    - filter.format.full_html
+    - paragraphs.paragraphs_type.hero_banner
+  module:
+    - text
+id: paragraph.hero_banner.field_heading
+field_name: field_heading
+entity_type: paragraph
+bundle: hero_banner
+label: 'Formatted Heading'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+    - full_html
+field_type: text

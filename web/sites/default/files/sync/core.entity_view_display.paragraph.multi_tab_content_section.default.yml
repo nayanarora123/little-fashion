@@ -1,0 +1,33 @@
+uuid: 2a66cf4b-497c-4f3a-b1fb-15e44cd7b8ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.multi_tab_content_section.field_heading
+    - field.field.paragraph.multi_tab_content_section.field_tab_item
+    - paragraphs.paragraphs_type.multi_tab_content_section
+  module:
+    - entity_reference_revisions
+    - text
+id: paragraph.multi_tab_content_section.default
+targetEntityType: paragraph
+bundle: multi_tab_content_section
+mode: default
+content:
+  field_heading:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_tab_item:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

@@ -1,0 +1,23 @@
+uuid: 8bd5cf44-6ec9-4948-9d9c-309c3915c99b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cta
+    - paragraphs.paragraphs_type.slick_slide
+  module:
+    - link
+id: paragraph.slick_slide.field_cta
+field_name: field_cta
+entity_type: paragraph
+bundle: slick_slide
+label: CTA
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link
