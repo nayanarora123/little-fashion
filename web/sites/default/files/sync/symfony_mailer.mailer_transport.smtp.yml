@@ -1,0 +1,18 @@
+uuid: 17aaea72-05c6-46c6-a89c-c5e2392dd3d8
+langcode: en
+status: true
+dependencies: {  }
+id: smtp
+label: SMTP
+plugin: smtp
+configuration:
+  user: 398f2b9ca17ade
+  pass: f72faf5178c5ec
+  host: sandbox.smtp.mailtrap.io
+  port: 587
+  query:
+    verify_peer: true
+    local_domain: ''
+    restart_threshold: null
+    restart_threshold_sleep: null
+    ping_threshold: null
